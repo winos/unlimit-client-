@@ -19,7 +19,7 @@ function generateSignature(method, path, secret) {
 
 const createOnrampOrder = async () => {
   const payload = {
-    quoteId: '3d219a7a-7920-4bbe-9dac-257fcb6a077c', // normalmente generado antes
+    quoteId: 'c211021e-480f-4626-bae4-8892db68ebe1', // normalmente generado antes
     fromCurrency: 'USD',
     toCurrency: 'ETH',
     amount: '100',
@@ -51,8 +51,8 @@ const createOnrampOrder = async () => {
     });
 
     console.log('Onramp Order Created');
-    console.log('🧾 Response:', response.data);
-    console.log('Checkout URL:', response.data?.checkoutUrl || '(No checkoutUrl returned)');
+    console.log('Response:', response.data);
+    console.log('Checkout URL:', response.data.checkoutUrl || '(No checkoutUrl returned)');
   } catch (error) {
     console.error('Error creating onramp order:');
     console.dir(error.response.data || error.message, { depth: null });
