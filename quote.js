@@ -5,13 +5,12 @@ const crypto = require('crypto');
 const apiKey = "VrHPdUXBsiGtIoWXTGrqqAwmFalpepUq";
 const secretKey = "GSLDrYtqLmXDJRHbqtUwDQLwKBbEgPvu";
 
-// Función para generar firma
+
 function generateSignature(method, path) {
   const data = method.toUpperCase() + path;
   return crypto.createHmac('sha256', secretKey).update(data).digest('hex');
 }
 
-// Simulación de una solicitud para crear una quote
 const createQuote = async ({
   chain,
   fromAmount,
@@ -66,11 +65,11 @@ const createQuote = async ({
       }
     });
 
-    console.log('✅ Quote creada con éxito:', response.data);
+    console.log('Quote creada con éxito:', response.data);
     return response.data;
 
   } catch (error) {
-    console.error('❌ Error creando quote:', error.response?.data || error.message);
+    console.error('Error creando quote:', error.response?.data || error.message);
   }
 };
 
