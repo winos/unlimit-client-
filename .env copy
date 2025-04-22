@@ -3,8 +3,8 @@
 
 
 # GateFi (Unlimit) Sandbox API credentials
-GATEFI_API_KEY=VrHPdUXBsiGtIoWXTGrqqAwmFalpepUq
-GATEFI_API_SECRET=GSLDrYtqLmXDJRHbqtUwDQLwKBbEgPvu
+GATEFI_API_KEY=gdPpxpJNMtUJdtEBDeajJyMbxwwPcGXZ
+GATEFI_API_SECRET=MzSniPhDLGloRWkyxnbZzRBhBtqEcgVp
 
 # Base URL for sandbox (use production URL when going live)
 GATEFI_BASE_URL=https://api-sandbox.gatefi.com
